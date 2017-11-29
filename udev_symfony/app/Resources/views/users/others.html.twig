@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:hx="http://purl.org/NET/hinclude">
+    <head>
+    </head>
+    <body>
+        <div class=" col-md-3">
+            <div class="slidebar-module well">
+                <h5>Other Users</h5>
+                <div>
+                    <ol class="list-unstyled">
+                        {% for user in user %}
+                            <li><a href="{{ path('users_show',{'id':user.id}) }}">{{ user.username }} </a></li>
+                        {% endfor %}
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+

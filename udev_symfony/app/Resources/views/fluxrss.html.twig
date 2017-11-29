@@ -1,0 +1,10 @@
+
+<div class=" col-md-3">
+    <div class="slidebar-module well">
+        <ol class="list-unstyled">
+            {% for result in result %}
+                <li><a href="{{ result.getLink() }}"></a></li>
+            {% endfor %}
+        </ol>
+    </div>
+</div>
