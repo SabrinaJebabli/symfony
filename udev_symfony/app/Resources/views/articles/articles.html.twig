@@ -32,6 +32,14 @@
                                 <a href="{{ path('articles_show', {'id' : i.id}) }}"
                                    class="btn bt,-primary btn-xs">Show</a>
                             </td>
+                            <td>
+                                <a href="{{ path('articles_update', {'id' : i.id}) }}"
+                                   class="btn bt,-primary btn-xs">Update</a>
+                            </td>
+                            <td>
+                                <a href="{{ path('articles_delete', {'id' : i.id}) }}"
+                                   class="btn bt,-primary btn-xs">Delete</a>
+                            </td>
 
                         </tr>
                     {% endfor %}

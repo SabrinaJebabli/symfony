@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:hx="http://purl.org/NET/hinclude">
+<head>
+</head>
+<body>
+<div class=" col-md-1"  class=pull-right>
+    <div class="slidebar-module well">
+        <h5>Others Articles</h5>
+        <div>
+            <ol class="list-unstyled">
+                {% for article in articles %}
+                    <li><a href="{{ path('articles_show',{'id':article.id}) }}">{{ article.subject }} </a></li>
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+

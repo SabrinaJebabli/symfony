@@ -1,4 +1,4 @@
-<div class=" col-md-3">
+<div class=" col-md-6">
     <div class="slidebar-module well">
         <h5>Users crées aujourd'hui</h5>
         <div>
@@ -6,7 +6,7 @@
                 {% for user in users %}
                     <li><a href="{{ path('users_show',{'id':user.id}) }}">{{ user.username }} </a></li>
                 {% else %}
-                rien
+                Pas d'utilisateurs crées.
                 {% endfor %}
             </ol>
         </div>

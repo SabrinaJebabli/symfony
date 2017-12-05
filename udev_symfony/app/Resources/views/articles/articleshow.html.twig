@@ -30,7 +30,7 @@
 
                     </tbody>
                 </table>
-
+                {{ render_hinclude(controller('AppBundle:Articles:othersArticlesWidget',{'id':article.id}), {'default': 'Loading Others Articles'})  }}
             </div>
 
 

@@ -1,6 +1,9 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+
+    {{ include('AppBundle:layout:mainMenu.html.twig',{'current':'user'}) }}
+
     {% form_theme form 'bootstrap_3_layout.html.twig' %}
 
     <div id="wrapper">

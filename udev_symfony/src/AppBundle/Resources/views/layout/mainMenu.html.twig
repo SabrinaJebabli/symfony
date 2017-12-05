@@ -2,12 +2,16 @@
 <html>
     <head>
         <style>
+            nav {
+                padding: 0; margin: 0;
+                background-color: #C9C9C9;
+            }
             nav ul{
                 list-style-type: none;
             }
-            nav li{
-                display : inline-block;
-                width : 100%;
+            nav li {
+                display: inline;
+                list-style: none; /* nécessaire pour IE7 */
             }
         </style>
 
@@ -17,7 +21,7 @@
             <ul id="menu_horizontal">
                 <li><a href={{ path('homepage') }}>Home</a></li>
                 <li><a href={{ path ('userslist') }}>Users</a></li>
-                <li><a <a href={{ path ('articleslist') }}>Articles</a></li>
+                <li><a href={{ path ('articleslist') }}>Articles</a></li>
             </ul>
         </nav>
     </body>

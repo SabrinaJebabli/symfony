@@ -1,0 +1,14 @@
+<div class=" col-md-6">
+    <div class="slidebar-module well">
+        <h5>Articles crées aujourd'hui</h5>
+        <div>
+            <ol class="list-unstyled">
+                {% for article in articles %}
+                    <li><a href="{{ path('articles_show',{'id':article.id}) }}">{{ article.titre }} </a></li>
+                {% else %}
+                    Pas d'articles creés.
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
+</div>
